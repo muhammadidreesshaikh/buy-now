@@ -1,0 +1,37 @@
+.home{
+    position: relative; 
+}
+
+.home .main-buttons{
+    background-color: var(--color-white);
+    padding: 25px 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -40px;
+}
+
+.home .main-buttons button{
+    margin: 0 10px;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border: 2px solid var(--color-black);
+    border-radius: 25px;
+    padding: 3px 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.home .main-buttons .active{
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.home .main-buttons button:hover{
+    background-color: black;
+    color: var(--color-white);
+    transition: 0.5s;
+    opacity: 0.5s;
+}

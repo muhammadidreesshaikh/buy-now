@@ -1,0 +1,58 @@
+.adds{
+    padding: 10% 0;
+    float: right;
+}
+
+.adds .image img{
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.adds .follow{
+    margin-top: 20%;
+    text-align: center;
+}
+
+.adds .follow h3{
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--color-gry);
+    font-family: auto;
+}
+
+.adds .follow .icon{
+    margin-top: 6%;
+}
+
+.adds .follow .icon i{
+    margin: 0 3px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 9px 8px;
+    font-size: 17px;
+    border-radius: 20px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.adds .follow .icon i:hover{
+    color: var(--color-yellow);
+    transition: 0.5s;
+    opacity: 0.5s;
+}
+
+.adds .image1 {
+    margin-top: 20%;
+}
+
+.adds .image1 img{
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}

@@ -1,0 +1,30 @@
+.category{
+    padding: 10% 0;
+}
+
+.category ul{
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
+}
+
+.category li{
+    padding-top: 10px;
+}
+
+
+.category a{
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--color-gry);
+}
+
+.category .active{
+    color: var(--color-black);
+}
+
+.category a:hover{
+    color: var(--color-black);
+    transition: 0.5s;
+    opacity: 0.5s;
+}
