@@ -11,7 +11,7 @@ function Header() {
                         
                         <div className="col-12 col-md-6 col-lg-6">
                             <div className='logo'>
-                                <a href="#"><i class="fas fa-dice-d20"></i> Buy Now.</a>
+                                <a href="#"><i class="fab fa-pushed"></i> Buy Now.</a>
                             </div>
                         </div>
 

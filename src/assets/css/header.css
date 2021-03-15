@@ -14,13 +14,13 @@
 .header .logo a{
     color: var(--color-white);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
     font-family: auto;
 }
 
 .header .logo i{
     color: var(--color-yellow);
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .header .nav{

@@ -16,7 +16,7 @@ function Adds() {
                     </div>
 
                     <div className="follow">
-                        <h3>Follow Buy Now.</h3>
+                        <h3>Follow BuyNow.</h3>
 
                         <div className="icon">
                             <i class="fab fa-facebook-f"></i>

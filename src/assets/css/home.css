@@ -1,8 +1,13 @@
-.home{
-    position: relative; 
+.home {
+    
 }
 
 .home .main-buttons{
+    position: relative; 
+}
+
+/* inner */
+.home .main-buttons .inner{
     background-color: var(--color-white);
     padding: 25px 20px;
     border-radius: 15px;
@@ -13,7 +18,7 @@
     top: -40px;
 }
 
-.home .main-buttons button{
+.home .main-buttons .inner button{
     margin: 0 10px;
     background-color: var(--color-white);
     color: var(--color-black);
@@ -24,14 +29,118 @@
     font-size: 14px;
 }
 
-.home .main-buttons .active{
+.home .main-buttons .inner .active{
     background-color: var(--color-black);
     color: var(--color-white);
 }
 
-.home .main-buttons button:hover{
-    background-color: black;
+.home .main-buttons .inner button:hover{
+    background-color: var(--color-black);
     color: var(--color-white);
+    transition: 0.5s;
+    opacity: 0.5s;
+}
+
+/* access */
+.home .main-buttons .access{
+    background-color: var(--color-black);
+    padding: 4% 6%;
+    margin-top: 8%;
+    border-radius: 15px;
+}
+
+.home .main-buttons .access h6{
+    font-weight: bold;
+    color: var(--color-yellow);
+    font-size: 18px;
+    font-family: auto;
+}
+
+.home .main-buttons .access h3 {
+    padding-top: 10px;
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.home .main-buttons .access .upgrade-button{
+    margin-top: 12px;
+}
+
+.home .main-buttons .access .upgrade-button a{
+    float: right;
+    background-color: var(--color-yellow);
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+.home .main-buttons .access .upgrade-button a:hover{
+    background-color: var(--color-white);
+    color: var(--color-black);
+    transition: 0.5s;
+    opacity: 0.5s;
+}
+
+/* products */
+.home .main-buttons .products{
+    padding: 5% 0;
+    text-align: center;
+}
+
+.home .main-buttons .products .card{
+    border-radius: 5px;
+    border: 1px solid var(--color-white);
+    margin-top: 10%;
+    width: 100%;
+    height: 320px;
+}
+
+.home .main-buttons .products .image{
+    padding: 15px;
+}
+
+.home .main-buttons .products img{
+    width: 100%;
+    height: auto;
+}
+
+.home .main-buttons .products .card h6{
+    border: 1px solid #f5f5f5;
+    color: var(--color-black);
+    padding: 10px 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.home .main-buttons .products .card .info{
+    padding: 15px 5px;
+}
+
+.home .main-buttons .products .info h1{
+    font-size: 16px;
+    font-weight: bold;
+    float: right;
+}
+
+.home .main-buttons .products .icons i{
+    float: right;
+    padding: 0 7px;
+    font-size: 18px;
+    color: var(--color-gry);
+    cursor: pointer;
+}
+
+.home .main-buttons .products .icons .red:hover{
+    color: var(--color-red);
+    transition: 0.5s;
+    opacity: 0.5s;
+}
+
+.home .main-buttons .products .icons .black:hover{
+    color: var(--color-black);
     transition: 0.5s;
     opacity: 0.5s;
 }
