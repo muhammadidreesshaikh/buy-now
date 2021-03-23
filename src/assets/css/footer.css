@@ -1,0 +1,107 @@
+.footer{
+    background-color: black;
+    padding-top: 4%;
+}
+
+.footer .logo i
+{
+    color: var(--color-yellow);
+    font-size: 22px;
+}
+
+.footer .logo a
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-white);
+    font-family: auto;
+}
+
+.footer p
+{
+    color: var(--color-gry);
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.footer .press{
+    margin-top: 5%;
+}
+
+.footer .press a{
+    color: var(--color-black);
+    background-color: var(--color-yellow);
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.footer .press a:hover{
+    background-color: var(--color-white);
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+.footer .dropdown-btn h3{
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--color-white)
+}
+
+.footer .dropdown-btn h3 a {
+    float: right;
+    cursor: pointer;
+}
+
+.footer .dropdown-btn p{
+    font-size: 13px;
+    color: var(--color-gry);
+}
+
+.footer .dropdown-btn ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer .dropdown-btn ul {
+    display: none;
+}
+
+.footer .dropdown-btn ul.open {
+    display: block;
+}
+
+.footer .dropdown-btn li{
+    padding-top: 9px;
+}
+
+.footer .dropdown-btn li a{
+    color: var(--color-white);
+    font-size: 14px;
+}
+
+.footer .dropdown-btn li a:hover
+{
+    color: var(--color-yellow);
+    transition: 0.5s;
+    opacity: 0.5s;
+    
+}
+
+.footer .seprator{
+    width: 100%;
+    height: 1px;
+    background-color: #212121;
+    margin-top: 20px;
+}
+
+.footer .last {
+    padding: 1% 0;
+}
+
+.footer .last p{
+   text-align: center;
+    color: var(--color-gry);
+    font-size: 11px;
+}

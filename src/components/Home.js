@@ -1,68 +1,43 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Category from '../components/Category';
 import Adds from '../components/Adds';
 import '../assets/css/home.css';
 
+import axios from 'axios'; 
+
 function Home() {
 
-    const [data, setData] = useState(
-        [
-            {
-                id: 0,
-                image: 'https://media.thieve.co/products%2FsSoDl5cilrKVVs9CVk1a.jpg?fm=jpg&dpr=1&q=70&w=354&h=354',
-                name: "Foldable USB Reading Light",
-                price: "$ 3.45",
-            },
-            {
-                id: 1,
-                image: 'https://media.thieve.co/products%2FyOEAvfZqxcUdiSafx2ve.jpg?fm=jpg&dpr=1&q=70&w=354&h=354',
-                name: "LED Digital Alarm Clock",
-                price: "$ 25.06",
-            },
-            {
-                id: 2,
-                image: 'https://media.thieve.co/products%2FcxszgcKUWrG0y520Rz9e.jpg?fm=jpg&dpr=1&q=70&w=354&h=354',
-                name: "Plastic Bird Cage",
-                price: "$ 11.86",
-            },
-            {
-                id: 3,
-                image: 'https://media.thieve.co/products%2FA29KiMTUyPhsbaTljclx.jpg?fm=jpg&dpr=1&q=70&w=354&h=354',
-                name: "Wooden Measuring Spoon",
-                price: "$ 3.55",
-            },
-            {
-                id: 4,
-                image: 'https://media.thieve.co/products%2FmcX3UobOngI5ZrY4lALZ.jpg?fm=jpg&dpr=1&q=70&w=354&h=354',
-                name: "Hanging Wooden Wall Clock",
-                price: "$ 1.90",
-            },
-            {
-                id: 5,
-                image: 'https://media.thieve.co/products%2Fe062kcEaYt8PmfcSUbZt.jpg?fm=jpg&dpr=1&q=70&w=354&h=354',
-                name: "Round Frame Blue Light Glasses",
-                price: "$ 1.79",
-            },
-            {
-                id: 6,
-                image: 'https://media.thieve.co/products%2FyOEAvfZqxcUdiSafx2ve.jpg?fm=jpg&dpr=1&q=70&w=354&h=354',
-                name: "LED Digital Alarm Clock",
-                price: "$ 25.06",
-            },
-            {
-                id: 7,
-                image: 'https://media.thieve.co/products%2FsSoDl5cilrKVVs9CVk1a.jpg?fm=jpg&dpr=1&q=70&w=354&h=354',
-                name: "Foldable USB Reading Light",
-                price: "$ 3.45",
-            },
-            {
-                id: 8,
-                image: 'https://media.thieve.co/products%2FA29KiMTUyPhsbaTljclx.jpg?fm=jpg&dpr=1&q=70&w=354&h=354',
-                name: "Wooden Measuring Spoon",
-                price: "$ 3.55",
-            }
-        ]
-    );
+    const [data, setData] = useState([]);
+    const [tools, setTools] = useState([]);
+
+    useEffect(() => {
+        getData();
+        getTools();
+    });
+
+    const getData = () => {
+        const url = "https://6055adb491ea2900170d2fa7.mockapi.io/api/v1/products";
+
+        axios.get(url).then(responce => {
+            console.log(responce);
+
+            var products = responce.data;
+
+            setData(products);
+        })
+    }
+
+    const getTools = () => {
+        const url = "https://6055adb491ea2900170d2fa7.mockapi.io/api/v1/electronics";
+
+        axios.get(url).then(responce => {
+            console.log(responce);
+
+            var electronics = responce.data;
+
+            setTools(electronics);
+        })
+    }
 
     return (
         <div>
@@ -103,7 +78,7 @@ function Home() {
                                         <div className="row">
 
                                             {
-                                                data.map((item, index) => {
+                                                data.map((item, tools, index) => {
                                                     return(
                                                         <div className="col-12 col-md-4 col-lg-4">
                                                             <div className="card">
@@ -127,6 +102,7 @@ function Home() {
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                    
                                                     )
                                                 })
                                             }

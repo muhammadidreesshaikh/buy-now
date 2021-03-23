@@ -104,7 +104,9 @@
 
 .home .main-buttons .products img{
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .home .main-buttons .products .card h6{
@@ -144,3 +146,18 @@
     transition: 0.5s;
     opacity: 0.5s;
 }
+
+.home .main-buttons .products .adds-discount{
+    margin-top: 5%;
+}
+
+.home .main-buttons .products .adds-discount img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* .select-img:nth-child(9) {
+    width: 100% !important ;
+} */
+

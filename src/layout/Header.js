@@ -27,6 +27,12 @@ function Header() {
                             </div>
                         </div>
 
+                        <div className="col-12 col-md-12 col-lg-12">
+                           <div className="heading">
+                                <h1>The Best Homeware Products on BuyNow.</h1>
+                           </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
